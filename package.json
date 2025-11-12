@@ -2,12 +2,13 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack",
+    "dev": "NODE_OPTIONS='--experimental-webstorage --localstorage-file=/Users/patrikhabbe/Programmering/localstorage-temp/localstorage.db'  next dev --turbopack",
     "start": "next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.17",
     "autoprefixer": "10.4.20",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
@@ -26,7 +27,9 @@
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
-    "@types/react-dom": "19.0.3"
+    "@types/react-dom": "19.0.3",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
